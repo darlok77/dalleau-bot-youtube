@@ -10,7 +10,7 @@ module.exports = class BotYoutube {
    * @return {string} body
    */
   init (callback) {
-    request({'url': `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${this.name}&key=AIzaSyBzhXQGlpp20V71dGCT_67REdUlWe-Gpog`, 'json': true}, (err, res, body)=> {
+    request({'url': `https://www.googleapis.com/youtube/v3/search?part=snippet&q=${this.name}&key=your-API-KEY`, 'json': true}, (err, res, body)=> {
       if (err) {
         throw err;
       }
